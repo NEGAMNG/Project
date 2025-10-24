@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>document</title>
+  </head>
+  <body>
+    <section id="header">
+      <div class="container">
+        <nav>
+          <div class="logo"><h1>Name</h1>
+          </div>
+          <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="services.html">services</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+          <div class="menu-btn"><img src="menu.svg"></div>
+        </nav>
+        <div class="header-content">
+          <h1>اسم الموقع</h1>
+          <p>نص جانبي</p>
+          <button class="primary-btn">تصفح</button>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="container">
+      <div class="services">
+        <img src="service-1.png">
+        <h1>خدماتنا</h1>
+        <p>
+          نحن الخ نقدم لكم..و ....ونحن ....
+          (نص)
+        </p>
+      </div>
+       <div class="services">
+        <img src="service-1.png">
+        <h1>خدماتنا</h1>
+        <p>
+          نحن الخ نقدم لكم..و ....ونحن ....
+          (نص)
+        </p>
+      </div>
+       <div class="services">
+        <img src="service-1.png">
+        <h1>خدماتنا</h1>
+        <p>
+          نحن الخ نقدم لكم..و ....ونحن ....
+          (نص)
+        </p>
+      </div>     
+    </section>
+    <section id="about" class="container">
+      <div class="about-content">
+        <h1>About Us</h1>
+        <p>
+          نص عن معلومات خاصة بالموسسة او المنظمة او الجهه او الجانب المالك لهذا الموضوع
+        </p>
+      </div>
+      <div class="about-img">
+        <img src="about.png">
+      </div>
+    </section>
+    <section id="talk-to-us">
+      <div class="talk-to-us-content">
+        <h1>TALK TO US</h1>
+        <P>
+          نص خاص طويل لسؤوال ان كان الشخص لدية سؤال او استفسار
+        </P>
+        <button class="primary-btn">
+          Get In Touch
+        </button>
+      </div>
+    </section>
+    <footer>
+      <ul class="footerlinks">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="services.html">services</a></li>
+        <li><a href="contact.html">contact</a></li>        
+      </ul>
+      <h1>NAME</h1>
+      <p>NAME all right reserved</p>
+    </footer>
+    
+    <script>
+      const menuBtn = document.querySelector('.menu-btn');
+      const navLinks  = document.querySelector('.nav-links');
+      
+      menuBtn.addEventListener('click', function () {
+        navLinks.classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>

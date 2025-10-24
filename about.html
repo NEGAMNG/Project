@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>title</title>
+
+  <!-- Link your CSS -->
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <!-- ====== HEADER ====== -->
+  <section id="header">
+    <div class="container">
+      <nav>
+        <div class="logo"><h1>NAME</h1></div>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+          <img src="menu.svg">
+        </div>
+      </nav>
+      <div class="header-content">
+        <h1>About Us</h1>
+        <a href="contact.html"><button class="primary-btn">Talk To Us</button></a>
+      </div>
+    </div>
+  </section>
+  <!-- ====== ABOUT SECTION ====== -->
+  <section id="about" class="container">
+    <div class="about-content">
+      <h1>Our Mission</h1>
+      <p>Hello, my name is nagham and with the help of many people I made this template. I made it so it is super easy to update and so that it flows perfectly with my tutorials.</p>
+      <p>Lots of love and hundreds of hours went into making it. I hope you love it as much as I do. I wish you the best of luck with your business, enjoy the adventure!</p>
+      <a href="contact.html"><button class="primary-btn">Get In Touch</button></a>
+    </div>
+
+    <img src="about.png">
+  </section>
+
+  <!-- ====== TALK TO US SECTION ====== -->
+  <section id="talk-to-us">
+    <div class="talk-to-us-content">
+      <h1>Talk To Us</h1>
+      <p>Have any questions? We’re always open to talk about your business, new projects, creative opportunities and how we can help you.</p>
+      <a href="contact.html"><button class="primary-btn">Contact Us</button></a>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+    <footer>
+      <ul class="footerlinks">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="servies.html">services</a></li>
+        <li><a href="contact.html">contact</a></li>        
+      </ul>
+      <h1>NAME</h1>
+      <p>NAME all right reserved</p>
+    </footer>
+    
+    <script>
+      const menuBtn = document.querySelector('.menu-btn');
+      const navLinks  = document.querySelector('.nav-links');
+      
+      menuBtn.addEventListener('click', function () {
+        navLinks.classList.toggle('active');
+      });
+    </script>
+</body>
+</html>

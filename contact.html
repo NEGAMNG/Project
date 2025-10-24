@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>document</title>
+  </head>
+  <body>
+    <section id="contact-header">
+      <div class="container">
+        <nav>
+          <div class="logo"><h1>Name</h1>
+          </div>
+          <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="servies.html">services</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+          <div class="menu-btn"><img src="menu.svg"></div>
+        </nav>
+        <div class="header-content">
+          <h1>تواصل معنا</h1>
+        </div>
+      </div>
+    </section>
+    <section id="contact-us" class="container">
+      <form action="#">
+        <h1>Get in touch</h1>
+        <div class="inputwrapper">
+          <input type="text" placeholder="yourname">
+          <input type="text" placeholder="Your Number">
+          <input type="email" name="" id="" placeholder="email">
+          <textarea name="massage" id="" cols="30" rows="10"></textarea>
+          <button class="primary-btn">SEND NOW</button>
+        </div>
+      </form>
+      <div class="address">
+        <h1>Talk To Us</h1>
+        <div class="detailswrapper">
+          <div class="detail">
+            <img src="email.png">
+            <div class="text">
+              <h6>EMAIL</h6>
+              <p>something@gmail.com</p>
+            </div>
+          </div>
+          <div class="detail">
+            <img src="phone.png">
+            <div class="text">
+              <h6>PHONE</h6>
+              <p>0101010101001</p>
+            </div>
+          </div>
+          <div class="detail">
+            <img src="location.png">
+            <div class="text">
+              <h6>ADDRESS</h6>
+              <p>example</p>
+            </div>
+          </div>          
+        </div>
+        <div class="followuswrapper">
+          <h3>Follow Us</h3>
+          <ul class="sociallink">
+            <li><a href=""><img src="facebook.png"></a></li>
+          </ul>
+            <li><a href=""><img src="linkedin.png"></a></li>
+          </ul>
+            <li><a href=""><img src="video.png"></a></li>
+          </ul>          
+        </div>
+      </div>
+    </section>
+    <footer>
+      <ul class="footerlinks">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="servies.html">services</a></li>
+        <li><a href="contact.html">contact</a></li>        
+      </ul>
+      <h1>NAME</h1>
+      <p>NAME all right reserved</p>
+    </footer>
+    
+    <script>
+      const menuBtn = document.querySelector('.menu-btn');
+      const navLinks  = document.querySelector('.nav-links');
+      
+      menuBtn.addEventListener('click', function () {
+        navLinks.classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>        
